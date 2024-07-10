@@ -78,7 +78,9 @@ class _CategoriesScreenState extends State<CategoriesScreen>
           ],
         ),
         builder: (context, child) => Padding(
-            padding:
-                EdgeInsets.only(top: 100 - _animationCOntriller.value * 100)));
+              padding:
+                  EdgeInsets.only(top: 100 - _animationCOntriller.value * 100),
+              child: child,
+            ));
   }
 }
